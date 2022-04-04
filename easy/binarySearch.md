@@ -8,7 +8,7 @@ Write a function that takes in a sorted array of integers as well as a target in
 - From here you simply need to compare the middle value, and dynamically change the sub array you are targeting, as well as the 'middle' variables. - Continue this until you either find your target, or 'left' is greater than 'right', meaning you have covered every element within the array.
 
 ## BigO
-- Time is equal to O(log(n)), with n being the length of the array. This is because after every iteration, you are splitting the array in half.
+- Time is equal to O(log(n)), with n being the length of the array. This is because after every iteration, you are splitting the array in half. If you are ever splitting the input in half (like binary array or search tree) think log(n).
 - Space is dependant upon if you choose recursive or iterative approach (iterative is better in most cases). If recursive, O(log(n)), because each time you call the recursive function, it's taking up another space in the call stack. Iterative is O(1) because you don't create any new space.
 
 ## Key Takeaways
